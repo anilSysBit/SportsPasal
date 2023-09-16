@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --darkblue:#0b1638;
+  --lightblue:#17316f;
+  --red:#bc0d04;
+  --text:rgb(137, 137, 137);
+  --bc1:#c0dce9;
+  --bc2:#384aeb;
+  --bc3:#f1f6f7;
+}
+
+h1 {
+  font-family: var(--roboto);
+  font-size: 50px;
+  color: black;
+}
+
+h4 {
+  font-family: var(--roboto);
+  font-size: 30px;
+}
+
+p {
+  font-family: var(--roboto);
+  font-size: 16px;
+  color: var(--text);
+}
+
+h2, h3 {
+  font-family: var(--oswald);
+}
+
+li {
+  font-family: var(--roboto);
+  color: var(--text);
+}
+
+.gb_out {
+  border-radius: 20%;
+}
+
+.nb_aw_container .size_manager {
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 0.5px solid rgb(225, 225, 225);
+}
+.nb_aw_container .size_manager .nb_c1 {
+  height: 100%;
+}
+.nb_aw_container .size_manager .logo {
+  flex: 1;
+}
+.nb_aw_container .size_manager .logo img {
+  float: right;
+  height: 100%;
+  scale: 1.9;
+}
+.nb_aw_container .size_manager nav {
+  flex: 3;
+}
+.nb_aw_container .size_manager nav ul {
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  place-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.nb_aw_container .size_manager nav ul li {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  cursor: pointer;
+}
+.nb_aw_container .size_manager nav ul li:hover {
+  color: blue;
+}
+.nb_aw_container .size_manager .other {
+  flex: 2;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.nb_aw_container .size_manager .other .carticon {
+  font-size: 30px;
+}
+
+.hp_aw_container .size_manager {
+  height: 90vh;
+  background-color: var(--bc3);
+}
+.hp_aw_container .size_manager .right {
+  height: 100%;
+  width: 40%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  row-gap: 20px;
+}
+.hp_aw_container .size_manager .right p {
+  line-height: 1.6;
+}
+.hp_aw_container .size_manager .left {
+  height: 100%;
+  width: 60%;
+  float: left;
+  position: relative;
+}
+.hp_aw_container .size_manager .left span {
+  float: left;
+}
+.hp_aw_container .size_manager .left span:first-child {
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(rgb(109, 109, 253), var(--bc2), var(--bc2));
+}
+.hp_aw_container .size_manager .left span:last-child {
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+  width: 50%;
+  right: 50px;
+  background-color: var(--bc1);
+  display: flex;
+  place-content: center;
+  place-items: center;
+}/*# sourceMappingURL=index.css.map */
