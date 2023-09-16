@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material'
 import homepic from '../assets/homepic.png'
+import HomeShowItems from '../components/HomeShowItems'
 const Homepage = () => {
   return (
     <div className="hp_aw_container">
@@ -13,7 +14,7 @@ const Homepage = () => {
         </div>
         <div className="right">
           <h4>Shop is Fun</h4>
-          <h1>Browse Our Premium Products</h1>
+          <h1>Browse every products in Nepal</h1>
           <p>Discover the ultimate sports collection at our E-commerce store in Nepal. Explore top-notch gear, apparel, and accessories for athletes and sports enthusiasts. Elevate your game with our premium selection.</p>
           <Button variant='contained' sx={{
           borderRadius:'30px',
@@ -24,6 +25,7 @@ const Homepage = () => {
         }}>Browse Now</Button>
         </div>
       </div>
+      <HomeShowItems/>
     </div>
   )
 }

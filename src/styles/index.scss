@@ -183,3 +183,52 @@ li{
             }
         }
     }
+
+.hsi_aw_container{
+    // border: 2px solid black;
+    padding: 10px;
+    .carousel_item{
+        height: 420px;
+        // width: 30%;
+        // border: 2px solid black;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        overflow: hidden;
+        .head_transition{
+            height: 130%;
+            width: 100%;
+            z-index: 2;
+            // border: 2px solid black;
+            position: relative;
+            float: left;
+            transition: .6s;
+            transform: translateY(50px);
+            &:hover{
+                background-color: rgba($color: white, $alpha: .6);
+                height: 100%;
+                transform: translateY(0px);
+            }
+            .view_container{
+                height: 90px;
+                width: 200px;
+                background-color: var(--bc2);
+                display: flex;
+                flex-direction: column;
+                place-content: center;
+                padding: 20px;
+                position: absolute;
+                bottom: 80px;
+                left: 2px;
+                h2{
+                    color: white;
+                    font-size: 25px;
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}

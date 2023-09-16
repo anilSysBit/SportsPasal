@@ -142,4 +142,49 @@ li {
   display: flex;
   place-content: center;
   place-items: center;
+}
+
+.hsi_aw_container {
+  padding: 10px;
+}
+.hsi_aw_container .carousel_item {
+  height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+}
+.hsi_aw_container .carousel_item .head_transition {
+  height: 130%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+  transition: 0.6s;
+  transform: translateY(50px);
+}
+.hsi_aw_container .carousel_item .head_transition:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  transform: translateY(0px);
+}
+.hsi_aw_container .carousel_item .head_transition .view_container {
+  height: 90px;
+  width: 200px;
+  background-color: var(--bc2);
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 80px;
+  left: 2px;
+}
+.hsi_aw_container .carousel_item .head_transition .view_container h2 {
+  color: white;
+  font-size: 25px;
+}
+.hsi_aw_container .carousel_item .head_transition .view_container p {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
