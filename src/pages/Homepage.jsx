@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '@mui/material'
 import homepic from '../assets/homepic.png'
 import HomeShowItems from '../components/HomeShowItems'
+import HomeTrendingProducts from '../components/HomeTrendingProducts'
 const Homepage = () => {
   return (
     <div className="hp_aw_container">
@@ -26,6 +27,7 @@ const Homepage = () => {
         </div>
       </div>
       <HomeShowItems/>
+      <HomeTrendingProducts/>
     </div>
   )
 }
