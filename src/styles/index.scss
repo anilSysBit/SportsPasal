@@ -18,6 +18,7 @@
     --bc1:#c0dce9;
     --bc2:#384aeb;
     --bc3:#f1f6f7;
+    --bc4:#99c6d7;
 }
 
 
@@ -191,6 +192,7 @@ li{
 
 .hsi_aw_container{
     // border: 2px solid black;
+    // float: left;
     padding: 10px;
     .carousel_item{
         height: 420px;
@@ -239,11 +241,14 @@ li{
 }
 
 .htp_aw_container{
+    float: left;
     .size_manager{
-        padding: 120px 140px 120px 140px;
+        padding: 80px 140px 0px 140px;
         // border: 2px solid black;
         .header{
             float: left;
+            // padding-left: 70px;
+            // border: 2px solid black;
             p{}
             h2{
                 font-size: 40px;
@@ -298,6 +303,51 @@ li{
                 &:hover .detail_container h2{
                     color: var(--bc2);
                 }
+            }
+        }
+    }
+}
+
+.hsob_aw_container{
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .size_manager{
+        height: 60vh;
+        width: 100%;
+        padding: 50px;
+        background-color: var(--bc4);
+        // border: 2px solid black;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        .detail_container{
+            width: 50%;
+            background-position: center;
+            text-align: center;
+            line-height: 2;
+            // border: 2px solid black;
+            h2{
+                font-size: 50px;
+                font-weight: 400;
+            }
+            h3{
+                font-weight: 400;
+                font-size: 25px;
+            }
+        }
+        .img_container{
+            width: 50%;
+            display: flex;
+            place-content: center;
+            // border: 2px solid black;
+            img{
+                height: 100%;
+                min-height: 200px;
+                max-height: 500px;
             }
         }
     }

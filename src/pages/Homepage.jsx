@@ -3,6 +3,7 @@ import { Button } from '@mui/material'
 import homepic from '../assets/homepic.png'
 import HomeShowItems from '../components/HomeShowItems'
 import HomeTrendingProducts from '../components/HomeTrendingProducts'
+import HomeSeasonOfferBanner from '../components/HomeSeasonOfferBanner'
 const Homepage = () => {
   return (
     <div className="hp_aw_container">
@@ -28,6 +29,7 @@ const Homepage = () => {
       </div>
       <HomeShowItems/>
       <HomeTrendingProducts/>
+      <HomeSeasonOfferBanner/>
     </div>
   )
 }

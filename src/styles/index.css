@@ -17,6 +17,7 @@
   --bc1:#c0dce9;
   --bc2:#384aeb;
   --bc3:#f1f6f7;
+  --bc4:#99c6d7;
 }
 
 h1 {
@@ -195,8 +196,11 @@ li {
   color: white;
 }
 
+.htp_aw_container {
+  float: left;
+}
 .htp_aw_container .size_manager {
-  padding: 120px 140px 120px 140px;
+  padding: 80px 140px 0px 140px;
 }
 .htp_aw_container .size_manager .header {
   float: left;
@@ -250,4 +254,46 @@ li {
 }
 .htp_aw_container .size_manager .product_list_container .product_list:hover .detail_container h2 {
   color: var(--bc2);
+}
+
+.hsob_aw_container {
+  float: left;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.hsob_aw_container .size_manager {
+  height: 60vh;
+  width: 100%;
+  padding: 50px;
+  background-color: var(--bc4);
+  display: flex;
+  place-content: center;
+  place-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.hsob_aw_container .size_manager .detail_container {
+  width: 50%;
+  background-position: center;
+  text-align: center;
+  line-height: 2;
+}
+.hsob_aw_container .size_manager .detail_container h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.hsob_aw_container .size_manager .detail_container h3 {
+  font-weight: 400;
+  font-size: 25px;
+}
+.hsob_aw_container .size_manager .img_container {
+  width: 50%;
+  display: flex;
+  place-content: center;
+}
+.hsob_aw_container .size_manager .img_container img {
+  height: 100%;
+  min-height: 200px;
+  max-height: 500px;
 }/*# sourceMappingURL=index.css.map */
