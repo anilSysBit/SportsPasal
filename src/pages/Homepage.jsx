@@ -4,6 +4,7 @@ import homepic from '../assets/homepic.png'
 import HomeShowItems from '../components/HomeShowItems'
 import HomeTrendingProducts from '../components/HomeTrendingProducts'
 import HomeSeasonOfferBanner from '../components/HomeSeasonOfferBanner'
+import HomeBestSellerList from '../components/HomeBestSellerList'
 const Homepage = () => {
   return (
     <div className="hp_aw_container">
@@ -30,6 +31,7 @@ const Homepage = () => {
       <HomeShowItems/>
       <HomeTrendingProducts/>
       <HomeSeasonOfferBanner/>
+      <HomeBestSellerList/>
     </div>
   )
 }
