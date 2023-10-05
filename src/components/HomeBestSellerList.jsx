@@ -42,6 +42,25 @@ const HomeBestSellerList = () => {
       imgSrc: "https://picsum.photos/200/206",
     },
   ];
+  const options = {
+    responsive: {
+      1000: {
+        items: 4
+      },
+      900:{
+        items:4,
+      },
+      800:{
+        items:3
+      },
+      400:{
+        items:2
+      },
+      300:{
+        items:1
+      }
+    },
+  }; 
   return (
     <div className="hbsl_aw_container">
         <div className="header">
@@ -49,7 +68,7 @@ const HomeBestSellerList = () => {
         <h2>Best Seller in <span className='gb_underline'>Market</span></h2>
     </div>
       <div className="size_manager">
-        <OwlCarousel loop margin={-300}>
+        <OwlCarousel className="owl-theme" loop {...options}>
           {bestSellers.map((elem, index) => {
             return (
               <div key={index} className="product_list">

@@ -2,15 +2,17 @@ import { useState } from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import NavigationBar from './components/NavigationBar'
-import '../src/styles/index.css'
 import Footer from './components/Footer'
+import HomeResponsiveNavigation from './components/HomeResponsiveNavigation'
 
 function App() {
   return (
     <>
       <div className="container">
-        <NavigationBar/>
         <BrowserRouter>
+        <div className="hrn_aw_container">
+        <HomeResponsiveNavigation/>
+        </div>
           <Routes>
             <Route path='' element={<Homepage/>}/>
           </Routes>

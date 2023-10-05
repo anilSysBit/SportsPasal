@@ -38,9 +38,22 @@ const HomeShowItems = () => {
             imgSrc: 'https://images.pexels.com/photos/15810418/pexels-photo-15810418/free-photo-of-fashion-man-travel-flag.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         }
     ];
+    const options = {
+        responsive: {
+          800: {
+            items: 3
+          },
+          600:{
+            items:2
+          },
+          300:{
+            items:1
+          }
+        }// Adjust this value to increase the number of dots
+      };
   return (
     <div className="hsi_aw_container">
-        <OwlCarousel loop margin={10}>
+        <OwlCarousel loop margin={10} {...options}>
             {sportsProducts.map((elem,index)=>{
                 return(
                     <div key={index} className='carousel_item' style={{
