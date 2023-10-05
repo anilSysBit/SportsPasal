@@ -28,7 +28,7 @@ const HomeShowItems = () => {
             imgSrc: 'https://images.pexels.com/photos/3074920/pexels-photo-3074920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         },
         {
-            name: 'Circket Duge Ball',
+            name: 'Duge Ball',
             category: 'Circket Equipment',
             imgSrc: 'https://images.pexels.com/photos/5519470/pexels-photo-5519470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         },
@@ -53,7 +53,7 @@ const HomeShowItems = () => {
       };
   return (
     <div className="hsi_aw_container">
-        <OwlCarousel loop margin={10} {...options}>
+        <OwlCarousel autoplay loop margin={10} {...options}>
             {sportsProducts.map((elem,index)=>{
                 return(
                     <div key={index} className='carousel_item' style={{

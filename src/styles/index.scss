@@ -228,7 +228,7 @@ li{
             position: relative;
             float: left;
             transition: .6s;
-            transform: translateY(50px);
+            transform: translateY(30px);
             &:hover{
                 background-color: rgba($color: white, $alpha: .6);
                 height: 100%;
@@ -739,7 +739,11 @@ li{
     }
 
     .hp_aw_container{
+        // border: 10px solid black;
+        // float: left;
+        position: relative;
         .size_manager{
+            height: 60vh;
             .left{
                 width: 20%;
                 span{
@@ -751,6 +755,25 @@ li{
             .right{
                 width: 80%;
             }
+        }
+    }
+    .hsi_aw_container{
+        // border: 5px solid black;
+        // float: left;
+        width: 100%;
+        height: 30vh;
+        .owl-carousel{
+            width: 100%;
+
+            .carousel_item{
+               height: 210px; 
+            }
+        }
+    }
+    .htp_aw_container{
+        padding: 20px;
+        .size_manager{
+            padding: 30px;
         }
     }
 }
