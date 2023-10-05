@@ -228,7 +228,7 @@ li{
             position: relative;
             float: left;
             transition: .6s;
-            transform: translateY(30px);
+            transform: translateY(45px);
             &:hover{
                 background-color: rgba($color: white, $alpha: .6);
                 height: 100%;
@@ -767,13 +767,24 @@ li{
 
             .carousel_item{
                height: 210px; 
+               .head_transition{
+                transform: translateY(15px);
+                opacity: .7;
+                &:hover{
+                    background-color: transparent;
+                }
+               }
+               .view_container{
+                height: 60px;
+                // width: 190px;
+               }
             }
         }
     }
     .htp_aw_container{
-        padding: 20px;
+        padding: 15px;
         .size_manager{
-            padding: 30px;
+            padding: 20px;
         }
     }
 }
