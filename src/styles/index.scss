@@ -211,6 +211,11 @@ li{
     // border: 2px solid black;
     // float: left;
     padding: 10px;
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
     .carousel_item{
         height: 420px;
         // width: 30%;
@@ -256,14 +261,18 @@ li{
         }
     }
 }
-
 .htp_aw_container{
-    float: left;
-    // height: auto;
+    // float: left;
+    clear: both;
     width: 100%;
+    // border: 2px solid black;
+    height: auto;
     .size_manager{
+        // float: left;
         padding: 80px 140px 0px 140px;
         // border: 2px solid black;
+        background-color: transparent;
+        height: 100%;
         .header{
             float: left;
             // padding-left: 70px;
@@ -273,14 +282,17 @@ li{
                 font-size: 40px;
                 font-weight: 600;
             }
+            // clear: l;
         }
         .product_list_container{
             float: left;
             display: flex;
             flex-wrap: wrap;
             // column-gap: 10px;
+            // background-color: green;
             // row-gap: 20px;
             margin-top: 50px;
+            row-gap: 20px;
             // border: 2px solid green;
             width: 100%;
             justify-content: space-around;
@@ -293,11 +305,13 @@ li{
 
 .product_list{
     // border: 2px solid black;
-    // float: left;
+    float: left;
     width: 285px;
     height: 430px;
     padding: 15px;
-    float: left;
+    // float: left;
+    border-radius: 10px;
+    border: .1px solid rgb(238, 238, 238);
     .img_container{
         height: 270px;
         border-radius: 4px;
@@ -785,6 +799,11 @@ li{
         padding: 15px;
         .size_manager{
             padding: 20px;
+            .header{
+                h2{
+                    font-size: 30px;
+                }
+            }
         }
     }
 }

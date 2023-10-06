@@ -176,6 +176,11 @@ li {
 .hsi_aw_container {
   padding: 10px;
 }
+.hsi_aw_container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .hsi_aw_container .carousel_item {
   height: 420px;
   background-position: center;
@@ -219,11 +224,14 @@ li {
 }
 
 .htp_aw_container {
-  float: left;
+  clear: both;
   width: 100%;
+  height: auto;
 }
 .htp_aw_container .size_manager {
   padding: 80px 140px 0px 140px;
+  background-color: transparent;
+  height: 100%;
 }
 .htp_aw_container .size_manager .header {
   float: left;
@@ -237,15 +245,18 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  row-gap: 20px;
   width: 100%;
   justify-content: space-around;
 }
 
 .product_list {
+  float: left;
   width: 285px;
   height: 430px;
   padding: 15px;
-  float: left;
+  border-radius: 10px;
+  border: 0.1px solid rgb(238, 238, 238);
 }
 .product_list .img_container {
   height: 270px;
@@ -662,5 +673,8 @@ li {
   }
   .htp_aw_container .size_manager {
     padding: 20px;
+  }
+  .htp_aw_container .size_manager .header h2 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=index.css.map */
